@@ -6,6 +6,8 @@ import torchvision.transforms as transforms
 from torch.utils.data import DataLoader
 import os
 from cifar10cnn import CIFAR10CNN
+import ssl
+ssl._create_default_https_context = ssl._create_unverified_context
 
 
 def train_model(epochs=50, batch_size=128, lr=0.001, save_path='cifar10_cnn.pth'):

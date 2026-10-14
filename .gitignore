@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+venv/
+.venv/
+env/
+
+# Model checkpoints (regenerate with train_once.py)
+cifar10_cnn.pth
+*.pth
+models/
+
+# Dataset (downloaded automatically)
+data/
+*.tar.gz
+
+# Misc
+.idea/
+.vscode/
+.DS_Store
